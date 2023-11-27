@@ -1,0 +1,42 @@
+#
+# Publishes the release to PyPI and docs to github pages
+#
+
+name: "publish release"
+
+on: 
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: install build dependencies
+        run: python -m pip install --upgrade build
+
+      - name: build
+        run: python -m build
+
+      - uses: actions/upload-artifact@v3
+        with:
+          path: dist
+
+  publish-pypi:
+    runs-on: ubuntu-latest
+    needs: [build]
+    steps:
+      - uses: actions/download-artifact@v3
+        with:
+          name: artifact
+          path: dist
+
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: __token__
+          password: ${{ secrets.PYPI_API_TOKEN }}
