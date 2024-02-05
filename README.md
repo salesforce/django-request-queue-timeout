@@ -6,18 +6,21 @@ This is useful in environments like Heroku, where traffic spikes can result in r
 
 ## Requirements
 
-* Python >= 3.6
-* Django >= 2.2
+Recent versions of Python and Django.  See `pyproject.toml` for exact versions.
 
 ## Installation
 
 Install from git
 
-    pip install git+<git address>#egg=django-request-queue-timeout
+```sh
+pip install git+<git address>#egg=django-request-queue-timeout
+```
     
-Install from [PyPI](https://pypi.org/)
+Install from [PyPI](https://pypi.org/project/django-request-queue-timeout/)
 
-    pip install django-request-queue-timeout  # Not yet published to PyPI
+```sh
+pip install django-request-queue-timeout
+```
 
 Add to `MIDDLEWARE` list in settings file as the first item:
 
