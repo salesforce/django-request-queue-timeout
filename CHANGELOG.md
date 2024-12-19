@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [unreleased] - XXXX-XX-XX
 - [PR 9](https://github.com/salesforce/django-request-queue-timeout/pull/9) Update GitHub action versions
+- [PR 10](https://github.com/salesforce/django-request-queue-timeout/pull/10) Fix Makefile install target
 
 ## [1.0.3] - 2024-02-06
 - [PR 6](https://github.com/salesforce/django-request-queue-timeout/pull/6) chore: upgrade django 4.2 LTS (@W-14178534)
