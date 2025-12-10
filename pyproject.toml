@@ -9,7 +9,7 @@ description = "Django middleware class to quickly dispatch any requests that wai
 license = {file = "LICENSE.txt"}
 readme = "README.md"
 dependencies = [
-    "django >=2.2, <5"
+    "django >=4.2, <6"
 ]
 keywords = [
   "django",
