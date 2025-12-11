@@ -4,12 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "django-request-queue-timeout"
-version = "1.0.3"
+version = "1.0.4"
 description = "Django middleware class to quickly dispatch any requests that wait too long in a queue before being processed"
 license = {file = "LICENSE.txt"}
 readme = "README.md"
 dependencies = [
-    "django >=2.2, <5"
+    "django >=4.2, <6"
 ]
 keywords = [
   "django",
