@@ -20,10 +20,10 @@ keywords = [
 [project.optional-dependencies]
 dev = [
   "bandit>=1.7.4",
-  "coverage[toml]==6.3.2",
-  "freezegun~=0.3.15",
-  "ipython~=7.15.0",
-  "ruff~=0.1.2",
+  "coverage[toml]==7.13.0",
+  "freezegun>=0.3.15,<1.6.0",
+  "ipython>=7.15,<9.9",
+  "ruff>=0.1.2,<0.15.0",
 ]
 
 [tool.setuptools]
