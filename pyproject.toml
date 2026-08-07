@@ -31,7 +31,11 @@ packages = ["rqto"]
 
 [tool.ruff]
 extend-exclude = [".heroku"]
-extend-select = ["C901"]
+# ruff 0.16 expanded its default rule set (~59 -> 413 rules). Pin the historic
+# default (E + F) explicitly so a ruff 0.16 upgrade stays behavior-neutral;
+# adopting the newly-default categories is a separate, deliberate decision.
+lint.select = ["E4", "E7", "E9", "F"]
+lint.extend-select = ["C901"]
 
 [tool.coverage.report]
 fail_under = 90

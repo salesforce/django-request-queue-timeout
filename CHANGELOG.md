@@ -4,6 +4,9 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+- [PR 23](https://github.com/salesforce/django-request-queue-timeout/pull/23) Pin the ruff lint rule set to the historic default (E + F) so a ruff 0.16 upgrade stays behavior-neutral
+
 ## [1.0.4] - 2025-12-10
 - [PR 9](https://github.com/salesforce/django-request-queue-timeout/pull/9) Update GitHub action versions
 - [PR 10](https://github.com/salesforce/django-request-queue-timeout/pull/10) Fix Makefile install target
